@@ -3,6 +3,7 @@
 
 ### private ###
 .secret
+secret/
 
 ### Django ###
 *.log
