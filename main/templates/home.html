@@ -18,6 +18,24 @@
       <span>Login with GitHub</span>
     </a>
     <!-- GitHub button ends here -->
+    <!-- google button starts here -->
+    <a href="{% provider_login_url 'google' %}" class="btn btn-danger">
+      <i class="fa fa-google fa-fw"></i>
+      <span>Login with Google</span>
+    </a>
+    <!-- google button ends here -->
+    <!-- kakao button starts here -->
+    <a href="{% provider_login_url 'kakao' %}" class="btn btn-warning">
+      <i class="fa fa-kakao fa-fw"></i>
+      <span>Login with Kakao</span>
+    </a>
+    <!-- kakao button ends here -->
+    <!-- naver button starts here -->
+    <a href="{% provider_login_url 'naver' %}" class="btn btn-success">
+      <i class="fa fa-kakao fa-fw"></i>
+      <span>Login with naver</span>
+    </a>
+    <!-- naver button ends here -->
   {% endif %}
 </div>
 
