@@ -43,15 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #new
-    'django.contrib.sites',
-    #3rd party
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
+    "django.contrib.sites",  # new
+    # 3rd party
+    "allauth", # new
+    "allauth.account", # new
+    "allauth.socialaccount", # new
     # social providers
-    'allauth.socialaccount.providers.github',
-    'allauth.socialaccount.providers.google',
+    "allauth.socialaccount.providers.github", # new
+    "allauth.socialaccount.providers.twitter", # new
 ]
 
 MIDDLEWARE = [
@@ -141,11 +140,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #new
 #Authentication setting
 AUTHENTICATION_BACKENDS = (
-    "allauth.account.auth_backends.AuthenticationBackend"
-)
+    "allauth.account.auth_backends.AuthenticationBackend",
+) #trouble shoting ","
 
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = "none"
 LOGIN_REDIRECT_URL = "home"
 ACCOUNT_LOGOUT_ON_GET = True
-
