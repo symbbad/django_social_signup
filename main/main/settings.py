@@ -50,8 +50,11 @@ INSTALLED_APPS = [
     "allauth.socialaccount", # new
     # social providers
     "allauth.socialaccount.providers.github", # new
-    "allauth.socialaccount.providers.twitter", # new
+    "allauth.socialaccount.providers.google", # new
+    "allauth.socialaccount.providers.kakao", # new
+    "allauth.socialaccount.providers.naver", # new
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -61,7 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
+    'allauth.account.middleware.AccountMiddleware', #new
 ]
 
 ROOT_URLCONF = 'main.urls'
